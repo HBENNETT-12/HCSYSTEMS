@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homelab - HC Systems</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/brand.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-top: 100px;">
+        <header>
+            <h1>Falcon Keyboard Project</h1>
+            <p>Custom Mechanical Keyboard Design & Build</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Overview</h2>
+                <p>The Falcon keyboard project was a custom-built mechanical keyboard designed to explore ergonomic layouts, product design, and hands-on electronics assembly. The goal was to create a unique typing experience inspired by split keyboard ergonomics while working within hardware limitations.</p>
+            </section>
+
+            <section>
+                <h2>Design Phase</h2>
+                <p>The project began with conceptual sketches, focusing on ergonomics and comfort. I was particularly inspired by split keyboard layouts, which promote a more natural wrist position. However, due to the lack of available Bluetooth-capable microcontrollers at the time, I chose a hybrid design—retaining ergonomic benefits while keeping a single, wired configuration.</p>
+                <p>After finalizing the concept on paper, I transitioned into 3D modeling using Blender to visualize the keyboard in a digital environment. This allowed for rapid iteration of shape, spacing, and overall aesthetics.</p>
+                <p>Once a satisfactory design was achieved, I recreated the model in Fusion 360, this time with precise dimensions and engineering constraints to ensure proper fitment of components and structural integrity.</p>
+            </section>
+
+            <section>
+                <h2>Fabrication</h2>
+                <p>With the finalized CAD model complete, I moved into production by 3D printing the keyboard case. The design included intentional routing paths to manage internal wiring and maintain a clean external appearance.</p>
+                <p>The printed case was then assembled and prepared for electronics integration.</p>
+            </section>
+
+            <section>
+                <h2>Electronics & Assembly</h2>
+                <p>The keyboard was powered by a Raspberry Pi Pico, chosen for its flexibility and compatibility with custom firmware.</p>
+                <p>Each key switch was hand-wired using a matrix configuration. Diodes were soldered to every switch to prevent ghosting and ensure accurate key registration. This process required careful planning and precision soldering to maintain reliability.</p>
+                <p>All wiring was routed toward the center of the board, then further managed through specially designed channels and holes to create a clean, organized look from the front-facing side.</p>
+            </section>
+
+            <section>
+                <h2>Firmware Implementation</h2>
+                <p>To bring the keyboard to life, firmware was installed using POG (Pico Open Firmware tools). This enabled full customization of key mappings and functionality, ensuring the keyboard met my specific workflow needs.</p>
+            </section>
+
+            <section>
+                <h2>Results & Reflection</h2>
+                <p>The final product features a sharp ergonomic angle and a column-based key layout. While the columnar design required an adjustment period, it ultimately provided a more natural typing experience.</p>
+                <p>This project successfully strengthened my skills in:</p>
+                <ul>
+                    <li>Product design and CAD modeling</li>
+                    <li>3D printing and prototyping</li>
+                    <li>Circuit design and soldering</li>
+                    <li>Firmware configuration and embedded systems</li>
+                </ul>
+                <p>Overall, the Falcon keyboard was a highly rewarding project that combined creativity with technical execution, resulting in a functional and personalized piece of hardware.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 HC Systems. All rights reserved.</p>
+        </footer>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
